@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Assets/style.css">
+  <title>Detalle del libro</title>
+</head>
+<body>
+  <!-- ───────── CABECERA ───────── -->
+  <header>
+    <a href="index.html" style="color:#fff;text-decoration:none;">← Volver al listado</a>
+  </header>
+
+  <!-- ───────── CUERPO ───────── -->
+  <main id="detail">
+    <!-- FICHA DEL LIBRO -->
+    <img id="book-cover" class="cover" alt="portada" />
+    <h1 id="book-title"></h1>
+    <p id="book-author"></p>
+    <p id="book-price"></p>
+    <p id="book-desc"></p>
+    <button id="add-to-cart">Add to cart</button>
+
+    <!-- OPINIONES -->
+    <h2>Opiniones</h2>
+    <div id="reviews"></div>
+
+    <!-- FORMULARIO NUEVA OPINIÓN -->
+    <h3>Deja tu opinión</h3>
+    <form id="review-form">
+      <textarea name="comment" required placeholder="Escribe tu comentario…"></textarea>
+      <select name="rating" required>
+        <option value="5">★★★★★ (5)</option>
+        <option value="4">★★★★☆ (4)</option>
+        <option value="3">★★★☆☆ (3)</option>
+        <option value="2">★★☆☆☆ (2)</option>
+        <option value="1">★☆☆☆☆ (1)</option>
+      </select>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <!-- LIBROS SIMILARES -->
+    <h3>Libros similares</h3>
+    <ul id="similar"></ul>
+  </main>
+
+  <!-- Script que rellena la página -->
+  <script type="module" src="Assets/js/detail.js"></script>
+</body>
+</html>

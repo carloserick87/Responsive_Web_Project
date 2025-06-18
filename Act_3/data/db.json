@@ -1,0 +1,14 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "isbn": "978-1",
+      "title": "Libro de prueba",
+      "author": "Autor",
+      "price": 10.0,
+      "category": "test",
+      "cover": "placeholder.jpg"
+    }
+  ],
+  "reviews": []
+}
